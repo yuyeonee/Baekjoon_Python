@@ -1,7 +1,9 @@
+import sys
+
 n = int(input())
 list = []
 
-for i in range(0,n):
+for i in range(n):
     list.append(int(input()))
 
 list.sort()
