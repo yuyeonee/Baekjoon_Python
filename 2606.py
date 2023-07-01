@@ -9,16 +9,14 @@ for i in range(m):
     graph[a].append(b)
     graph[b].append(a)
 
-print(graph)
 queue = deque()
 queue.append(1)
 check = [0]*(n+1)
 while queue:
     now = queue.popleft()
-    print(queue)
     for next in graph[now]:
         if check[next] == 0:
-            check[next] == 1
+            check[next] = 1
             queue.append(next)
         
-print(check)
+print(check.count(1)-1 if check.count(1)!=0 else 0)
