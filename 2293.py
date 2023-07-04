@@ -11,3 +11,5 @@ for coin in coins:
         dp[i] += dp[i-coin]
 
 print(dp[k])
+
+#1, 2, 3 더하기 4
